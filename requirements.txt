@@ -1,0 +1,44 @@
+# Core RAG Framework
+langchain>=0.1.0
+langchain-openai>=0.1.0
+langchain-chroma>=0.1.0
+langchain-community>=0.1.0
+langchain-core>=0.1.0
+
+# OpenAI Integration
+openai>=1.0.0
+tiktoken>=0.5.0
+
+# Vector Database
+chromadb>=0.4.0
+
+# Document Processing
+pypdf>=3.0.0
+docx2txt>=0.8
+
+# Multi-Modal (Image Processing)
+PyMuPDF>=1.23.0
+
+# Embedding Analysis
+numpy>=1.21.0
+scikit-learn>=1.0.0
+
+# Environment Management
+python-dotenv>=1.0.0
+
+# Optional: Alternative Models
+# Uncomment if you want to use these models
+# langchain-google-genai>=1.0.0
+# google-generativeai>=0.3.0
+# langchain-huggingface>=0.0.1
+# transformers>=4.30.0
+# torch>=2.0.0
+
+# Jupyter Notebook Support
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Development and Testing
+pytest>=7.0.0
+black>=23.0.0
+flake8>=6.0.0

@@ -1,0 +1,248 @@
+# =============================================================================
+# COMPREHENSIVE .GITIGNORE FOR RAG DEMO PROJECT
+# =============================================================================
+# This file ignores everything except the RAG demo files we want to push to GitHub
+
+# =============================================================================
+# IGNORE EVERYTHING FIRST, THEN ALLOW SPECIFIC FILES
+# =============================================================================
+
+# Ignore everything by default
+*
+
+# =============================================================================
+# ALLOW SPECIFIC RAG DEMO FILES
+# =============================================================================
+
+# Core RAG Demo Files
+!Comprehensive_RAG_Demo.ipynb
+!Enhanced_RAG_Demo_with_Embeddings.py
+!multimodal_rag_demo.py
+!test_setup.py
+!setup.py
+
+# Configuration Files
+!requirements.txt
+!.env.example
+!.gitignore
+
+# Documentation
+!README.md
+!docs/
+!docs/**
+!sample_documents/
+!sample_documents/README.md
+
+# =============================================================================
+# ALWAYS IGNORE THESE (EVEN IF EXPLICITLY ADDED)
+# =============================================================================
+
+# Environment and API Keys (CRITICAL - NEVER COMMIT)
+.env
+.env.local
+.env.*.local
+*.env
+**/Code Snippets/.env
+
+# Python Runtime
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+rag_demo_env/
+**/venv/
+**/env/
+
+# Jupyter Notebook Runtime
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Vector Databases and Caches
+vector_db/
+chroma_db/
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs and Debug Files
+*.log
+logs/
+debug/
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.spyderproject
+.spyproject
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Temporary Files
+*.tmp
+*.temp
+temp/
+tmp/
+.temporary/
+
+# Large Model Files
+models/
+*.bin
+*.safetensors
+*.onnx
+*.pkl
+*.pickle
+
+# Cache Directories
+.cache/
+*.cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Test Outputs
+test_outputs/
+screenshots/
+output/
+
+# Build and Distribution
+docs/_build/
+site/
+.tox/
+
+# =============================================================================
+# IGNORE OTHER PROJECT FILES (NOT PART OF RAG DEMO)
+# =============================================================================
+
+# Ignore all other Python files not part of our RAG demo
+*.py
+!Enhanced_RAG_Demo_with_Embeddings.py
+!multimodal_rag_demo.py
+!test_setup.py
+!setup.py
+
+# Ignore all other notebooks
+*.ipynb
+!Comprehensive_RAG_Demo.ipynb
+
+# Ignore all other documentation
+*.md
+!README.md
+!docs/**/*.md
+!sample_documents/README.md
+
+# Ignore all other config files
+*.txt
+*.toml
+*.yaml
+*.yml
+*.json
+*.ini
+*.cfg
+!requirements.txt
+
+# Ignore all directories except our specific ones
+*/
+!docs/
+!sample_documents/
+
+# =============================================================================
+# IGNORE SAMPLE DOCUMENTS (OPTIONAL)
+# =============================================================================
+# Uncomment these lines if you don't want to include sample documents in Git
+# This is recommended for large files or proprietary documents
+
+# Large document files
+sample_documents/*.pdf
+sample_documents/*.docx
+sample_documents/*.doc
+sample_documents/*.pptx
+sample_documents/*.xlsx
+
+# But keep the README in sample_documents
+!sample_documents/README.md
+
+# =============================================================================
+# SECURITY - NEVER COMMIT THESE
+# =============================================================================
+
+# API Keys and Secrets
+*api_key*
+*secret*
+*password*
+*token*
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Configuration with sensitive data
+config.py
+settings.py
+local_settings.py
+
+# =============================================================================
+# PERFORMANCE - IGNORE LARGE FILES
+# =============================================================================
+
+# Large files that shouldn't be in Git
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.dmg
+*.iso
+
+# Video and audio files
+*.mp4
+*.avi
+*.mov
+*.mp3
+*.wav
+
+# Large images
+*.tiff
+*.bmp
+*.raw
