@@ -166,6 +166,7 @@ site/
 !README.md
 !docs/**/*.md
 !sample_documents/README.md
+!AGENTIC_RAG_IMPLEMENTATION_TASKS.md
 
 # Ignore all other config files
 *.txt
