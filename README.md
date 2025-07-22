@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 Comprehensive RAG Demo for Interns
 
 A complete **Retrieval-Augmented Generation (RAG)** learning experience with three progressive approaches:
@@ -258,3 +259,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 **Happy Learning! 🎉**
 
 *This demo represents the cutting edge of RAG technology and will give you a comprehensive understanding of how modern AI systems work.*
+=======
+# RAG-Demo-for-Interns
+Comprehensive RAG (Retrieval-Augmented Generation) Demo for Intern Training
+>>>>>>> 5d3dd68e230092b6ee10011a1592fda365245c91
